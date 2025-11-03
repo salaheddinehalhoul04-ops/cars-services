@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fleet – INITIALE AUTO RENT</title>
+  <meta name="description" content="Browse our car fleet in Tangier: economy, compact, SUV, and more.">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta property="og:title" content="Fleet – INITIALE AUTO RENT">
+  <meta property="og:description" content="Economy, compact, SUV, and luxury cars.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/fleet.html">
+  <meta property="og:image" content="img/og-default.svg">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">INITIALE AUTO RENT</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-controls="site-nav" aria-expanded="false"><span class="nav-toggle-bar"></span></button>
+      <nav id="site-nav" class="site-nav" data-nav>
+        <ul>
+          <li><a data-i18n="nav.home" href="index.html">Home</a></li>
+          <li><a data-i18n="nav.fleet" href="fleet.html" aria-current="page">Fleet</a></li>
+          <li><a data-i18n="nav.pricing" href="pricing.html">Pricing</a></li>
+          <li><a data-i18n="nav.booking" href="booking.html" class="btn btn-primary">Book Now</a></li>
+          <li><a data-i18n="nav.about" href="about.html">About</a></li>
+          <li><a data-i18n="nav.contact" href="contact.html">Contact</a></li>
+          <li class="lang-switcher"><label class="sr-only" for="lang">Language</label><select id="lang"><option value="en">EN</option><option value="fr">FR</option><option value="ar">AR</option></select></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <h1 data-i18n="fleet.title">Our Fleet</h1>
+    <p data-i18n="fleet.intro">Choose the right car category for your trip.</p>
+
+    <div class="cards">
+      <article id="economy" class="card">
+        <img src="img/pexels-pixabay-248747.jpg" width="400" height="240" loading="lazy" alt="Economy category">
+        <div class="card-body">
+          <h2>Economy</h2>
+          <ul class="specs">
+            <li>Manual</li>
+            <li>Petrol</li>
+            <li>5 seats</li>
+            <li>2 bags</li>
+          </ul>
+          <div class="price">MAD 250/day</div>
+          <div class="card-actions">
+            <button class="btn btn-secondary" data-details-toggle>View Details</button>
+            <a class="btn btn-primary" href="booking.html?category=economy">Book</a>
+          </div>
+          <div class="details" hidden>
+            <p>Air conditioning, Bluetooth, USB. Ideal for city trips.</p>
+          </div>
+        </div>
+      </article>
+
+      <article id="compact" class="card">
+        <img src="img/pexels-mikebirdy-112460.jpg" width="400" height="240" loading="lazy" alt="Compact category">
+        <div class="card-body">
+          <h2>Compact</h2>
+          <ul class="specs">
+            <li>Automatic</li>
+            <li>Petrol</li>
+            <li>5 seats</li>
+            <li>3 bags</li>
+          </ul>
+          <div class="price">MAD 320/day</div>
+          <div class="card-actions">
+            <button class="btn btn-secondary" data-details-toggle>View Details</button>
+            <a class="btn btn-primary" href="booking.html?category=compact">Book</a>
+          </div>
+          <div class="details" hidden>
+            <p>Comfortable and efficient. Great for longer drives.</p>
+          </div>
+        </div>
+      </article>
+
+      <article id="suv" class="card">
+        <img src="img/pexels-mikebirdy-244206.jpg" width="400" height="240" loading="lazy" alt="SUV category">
+        <div class="card-body">
+          <h2>SUV</h2>
+          <ul class="specs">
+            <li>Automatic</li>
+            <li>Diesel</li>
+            <li>5 seats</li>
+            <li>4 bags</li>
+          </ul>
+          <div class="price">MAD 550/day</div>
+          <div class="card-actions">
+            <button class="btn btn-secondary" data-details-toggle>View Details</button>
+            <a class="btn btn-primary" href="booking.html?category=suv">Book</a>
+          </div>
+          <div class="details" hidden>
+            <p>Spacious and versatile for family and adventure.</p>
+          </div>
+        </div>
+      </article>
+
+      <article id="luxury" class="card">
+        <img src="img/pexels-olly-787472.jpg" width="400" height="240" loading="lazy" alt="Luxury category">
+        <div class="card-body">
+          <h2>Luxury</h2>
+          <ul class="specs">
+            <li>Automatic</li>
+            <li>Petrol</li>
+            <li>5 seats</li>
+            <li>3 bags</li>
+          </ul>
+          <div class="price">MAD 900/day</div>
+          <div class="card-actions">
+            <button class="btn btn-secondary" data-details-toggle>View Details</button>
+            <a class="btn btn-primary" href="booking.html?category=luxury">Book</a>
+          </div>
+          <div class="details" hidden>
+            <p>Premium comfort and features for special trips.</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <address>
+        <strong>INITIALE AUTO RENT</strong><br>
+        BRANES 02 ALGHORFA 3 RUE 11 N 03, GARAGE N 02<br>
+        Tanger-Médina (AR), Postcode: <span data-postcode>90000</span><br>
+        D-U-N-S®: 952335820<br>
+        Hours: Daily 08:00–20:00
+      </address>
+      <nav class="footer-links">
+        <a href="privacy.html" class="btn btn-small">Privacy Policy</a>
+        <a href="terms.html">Terms of Rental</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>document.addEventListener('click',e=>{if(e.target.matches('[data-details-toggle]')){const d=e.target.closest('.card').querySelector('.details');d.hidden=!d.hidden;}})</script>
+</body>
+</html>
